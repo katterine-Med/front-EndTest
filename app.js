@@ -33,6 +33,5 @@ form.addEventListener("submit", e=>{
             document.getElementById("emailInput").innerHTML = email.value;
         }
         document.getElementById("ingresar").addEventListener("click", pantalla);
-        
     }
 })
