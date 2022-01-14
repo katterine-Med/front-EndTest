@@ -1,4 +1,7 @@
-//const API_URL = 'https://api.finerio.mx/api';
+const aplicacion = document.querySelector('.container');
+
+const url = 'https://api.finerio.mx/login';
+
 
 const nombre = document.getElementById("name")
 const email = document.getElementById("email")
@@ -33,5 +36,19 @@ form.addEventListener("submit", e=>{
             document.getElementById("emailInput").innerHTML = email.value;
         }
         document.getElementById("ingresar").addEventListener("click", pantalla);
+<<<<<<< HEAD
     }
+=======
+        
+    } 
+    
+>>>>>>> login
 })
+fetch(url)
+        .then(res =>  console.log(res))
+
+/*movimientos
+https://api.finerio.mx/api/users/4527ae30-b2a4-4e75-befb-a2c746ac7ad8/movements?deep=true&offset=0&max=35&includeCharges=true&includeDeposits=true&includeDuplicates=true
+amount
+Description
+type*/
